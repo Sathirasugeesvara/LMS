@@ -12,7 +12,7 @@ body{
         background-color: rgb(214, 231, 238); 
     }
 .bodyDark{
-  background-color: black;
+  background-color:#0b1220;
 }
 
 
@@ -36,19 +36,4 @@ body{
 .nav-item {
   margin-right: 20px;
 }
-.separator {
-  padding: 0 10px;
-  color: #888;
-  user-select: none;
-}
 
-
-.nav-item .nav-link svg {
-  transition: transform 0.3s ease;
-}
-.nav-item .nav-link:hover svg {
-  transform: translateX(-4px);
-}
-.nav-item .nav-link:hover {
-  color: #333 !important;
-}
