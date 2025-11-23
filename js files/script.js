@@ -14,13 +14,24 @@ if (hour < 12) {
 
 
 function changeMode() {
+  //const navbar = document.querySelector('.navbar');
   const icon = document.getElementById('themeIcon');
   const body = document.body;
-  const footer = document.querySelector('footer'); // Correct way to select footer
+  const footer = document.querySelector('footer'); 
+  const popular = document.getElementById("popularcourses");
+  const features = document.getElementById("features");
+  const boxone = document.getElementById("boxone");
 
   // Toggle dark mode background
   body.classList.toggle('bodyDark');
+  //if (navbar) navbar.classList.toggle('dark');
   if (footer) footer.classList.toggle('footerDark'); // Only toggle if footer exists
+  if (popular) popular.classList.toggle("dark");
+  if (features) features.classList.toggle("dark");
+  if (boxone) boxone.classList.toggle("dark");
+
+  const projectCards = document.querySelectorAll('.project-card');
+  projectCards.forEach(card => card.classList.toggle('dark'));
 
   if (icon.getAttribute('data-mode') !== 'sun') {
     // Change icon to sun
